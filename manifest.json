@@ -1,0 +1,26 @@
+{
+    "manifest_version":2,
+
+    "name":"Make My Notes",
+    "description":"Your personalised custom easy to use notes-generator",
+    "version":"1.0",
+    "icons":
+    {
+        "128":"128.png",
+        "48":"48.png",
+        "16":"16.png"
+    },
+
+    "browser_action":
+    {
+        "default_icon":"16.png",
+        "default_popup":"popup.html"
+    },
+    
+      "permissions": [
+      "storage",
+      "notifications",
+      "contextMenus"
+    ]
+
+}

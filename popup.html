@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Extension</title>
+    <style>
+        * {
+            list-style: none;
+            margin: 0px;
+        }
+
+        body {
+            width: 290px;
+            min-height: 200px;
+            max-height: 400px;
+            color: white;
+            background-image: linear-gradient(to right, rgba(12, 12, 236, 0.596), black);
+            /* border: 2px solid black; */
+        }
+        li {
+            margin: 10px;
+        }
+        input,button {
+            margin: 10px;
+        }
+        button{
+            margin-left: 100px;
+        }
+        #todo-section{
+          display: flex; 
+          flex-direction: column;
+          justify-content: center;
+        }
+        .flex-item{
+            align-items: center;
+        }
+        h2{
+            padding: 10px;
+        }
+        /* width */
+            ::-webkit-scrollbar {
+            width: 10px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 15px rgb(14, 14, 14); 
+            }
+            
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+            background:  rgba(12, 12, 236, 0.596); 
+            border-radius: 10px;
+            }
+
+    </style>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="popup.js"></script>
+</head>
+
+<body>
+        <div   id="todo-section">
+
+            <div id="addTaskDiv" class="flex-item">
+                <input   type="text" id="taskInput" placeholder=" ">
+                <input type="submit" id="addButtonTask"  value="Add Note">
+
+            </div>
+
+            <div class="flex-item" >
+                <h2>Your Notes </h2>
+            </div>
+
+
+            <ul id="todo-listUl" class="flex-item" >
+
+            </ul>
+
+        </div>
+        <button id="clearNotes">Clear notes</button>
+</body>
+
+</html>
